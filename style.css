@@ -1,0 +1,313 @@
+/* font du titre principal - 'Tittilium web' */
+@font-face {
+    font-family: font_navbar;
+    src: url(fonts/Titillium_Web/TitilliumWeb-Light.ttf);
+}
+/* font des liens navbar - 'Nurito sans' */
+@font-face {
+    font-family: font_h1;
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+/* font des textes - 'Nurito sans' */
+@font-face {
+    font-family: font_p;
+    src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+/* font des titres audio - 'Noto-Sans' */
+@font-face {
+    font-family: font_audio;
+    src: url(fonts/Noto_Sans/NotoSans-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    width: 100vw;
+    background: white;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* HEADER ------------------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+header{
+    overflow: hidden;
+    width: 100vw;
+    height: 40vh;
+    background: url(images/console_2.jpg) center/cover no-repeat;
+    background-position: top;
+}
+header h1{
+    width: 100vw;
+    padding: 20px 35px 20px 35px;
+    font-size: 3.2rem;
+    font-family: 'font_h1', sans-serif;
+    font-weight: lighter;
+    color:white;
+    background: linear-gradient(180deg, black, rgba(255, 255, 255, 0));
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* NAVBAR ------------------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+nav{
+    width: 100vw;
+    background: #000;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(180deg, rgb(119, 0, 0), rgb(128, 2, 2));
+}
+nav li{
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+nav ul li a{
+    font-family: 'font_navbar', sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* ACCUEIL ------------------------ */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.bloc_texte{
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
+}
+#accueil{
+    margin-top: 20px;
+}
+#accueil h2{
+    margin-bottom: 7px;
+    text-align: center;
+    font-family: 'font_h1', sans-serif;
+    font-size: 1.6rem;
+}
+#accueil h3{
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'font_h1', sans-serif;
+    font-size: 1.6rem;
+}
+#accueil p{
+    text-align: justify;
+    font-family: 'font_p', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    color: black;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* REALISATIONS ------------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.bloc_texte{
+    width: 50vw;
+    margin: auto;
+    
+    padding: 20px;
+}
+#reas{
+    margin: top;
+    margin-top: 60x;
+    padding-bottom: 20px;
+    background: url(images/session.jpg) center/cover fixed no-repeat;
+    background-position: top;
+}
+#reas #degrade{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0));
+}
+#reas h2, #matos h2, #tarifs h2{
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    font-family: 'font_h1', sans-serif;
+    font-size: 1.6rem;
+    /* font-weight: lighter; */
+    color: rgb(255, 255, 255);
+}
+.block_audio{
+    margin: auto;
+    max-width: 500px;
+}
+#reas audio{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 40px;
+    margin-bottom: 7px;
+}
+.titre{
+    font-family: 'font_audio', sans-serif;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+.titre a{
+    color: rgb(178, 178, 226);
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    text-decoration: underline;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* SWIPER ------------------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#galerie{
+    padding: 55px 0px 55px 0px;
+    border-top: solid 1px rgba(159, 159, 159, 0.44);
+    background: linear-gradient(180deg, rgb(5, 5, 5),rgb(50, 50, 50));
+}
+
+.swiper {
+    width: 80%;
+    height: 80vh;
+    border: solid 1px rgba(255, 255, 255, 0.429);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-family: 'font_h1', sans-serif;
+    font-size: 2rem;
+    color: white;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#swiper1{
+    background: url(images/galerie/img1.jpg) center/cover;
+}
+#swiper2{
+    background: url(images/galerie/img2.jpg) center/cover;
+}
+#swiper3{
+    background: url(images/galerie/img3.jpg) center/cover;
+}
+#swiper4{
+    background: url(images/galerie/img4.jpg) center/cover;
+}
+#swiper5{
+    background: url(images/galerie/img5.jpg) center/cover;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* SWIPER ------------------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#matos{
+    margin-top: -10px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.202), rgba(0, 0, 0, 0));
+}
+#block_matos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#matos ul{
+    display: block;
+    padding: 20px 20px 10px 20px;
+    background: rgb(226, 226, 226);
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgba(77, 77, 77, 0.606);
+}
+#matos h2{
+    padding-top: 30px;
+    color: black;
+}
+#matos h3{
+    margin-bottom: 30px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'font_h1', sans-serif;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    background: rgb(158, 45, 45);
+    border-radius: 20px;
+}
+#matos li{
+    padding-bottom: 8px;
+    font-family: 'Gill Sans','Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
+.bord_interne{
+    padding: 10px 20px 25px 20px;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* TARIFS - CONTACT --------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+#tarifs{
+    background: url(images/micro2.jpg) center/cover fixed;
+    background-position: top;
+}
+#tarifs h2{
+    padding: 25px 0px 40px 0px;
+}
+#tarifs h3{
+    margin-bottom: 5px;
+    font-family: 'font_h1', sans-serif;
+    font-size: 1.3rem;
+    color: rgb(255, 80, 80);
+}
+p{
+    font-size: 1.2rem;
+    color: white;
+}
+#contact{
+    text-align: center;
+}
+#contact h2{
+    margin-bottom: -15px;
+}
+#contact p{
+    text-align: center;
+}
+#contact #lien_contact{
+    font-family: 'font_h1', sans-serif;
+    color: rgb(60, 60, 255);
+    font-size: 1.2rem;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+#block_tarifs{
+    width: 40%;
+    max-width: 300px;
+    margin: auto;
+}
+#contact a{
+    color: rgb(219, 219, 255);
+}
+
+

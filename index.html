@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>
+            Studio L'Atelier
+        </h1>
+    </header>
+
+    <!-- NAVBAR   -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#">accueil</a>
+            </li>
+            <li>
+                <a href="#">réalisations</a>
+            </li>
+            <li>
+                <a href="#">locaux</a>
+            </li>
+            <li>
+                <a href="#">matériel</a>
+            </li>
+            <li>
+                <a href="#">plugs</a>
+            </li>
+            <li>
+                <a href="#">tarifs</a>
+            </li>
+            <li>
+                <a href="#">contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ACCUEIL -->
+    <section id="accueil">
+        <div class="bloc_texte">
+            <h2>
+                Vous voulez enregistrer ou mixer
+                votre musique ? 
+            </h2>
+            <h3>
+                L'Atelier mettra en valeur
+                vos productions !  
+            </h3>
+            <p>
+                L' Atelier est un studio d'enregistrement basé
+                à St Maximin (Var). Le studio a déjà servi les 
+                projets de musiciens et groupes dans divers styles,
+                du son pop-rock au jazz, en passant par l'électro
+                et la musique de documentaire.</br></br>
+                L'Atelier vous permettra d'enregistrer, mixer et
+                effectuer un pré-master de votre musique avec du 
+                matériel professionnel de grande qualité. Que ce soit
+                pour une maquette ou un album, L'Atelier saura être une
+                aide précieuse à la réalisation de vos projets musicaux.
+
+            </p>
+        </div>
+    </section>
+
+    <!-- REALISATIONS -->
+    <section id="reas" >
+        <div id="degrade">
+            <div class="bloc_texte">
+                <h2>
+                    Exemples enregistrés et mixés à L'Atelier
+                </h2>
+
+                <!-- titres -->
+                <div class="block_audio">
+                    <audio controls="controls">
+                        <source src="audio/listen_to_see.mp3">
+                    </audio>
+                    <p class="titre">
+                        Listen to see - <a href="#none">Sonoa</a>
+                    </p>
+                </div>
+
+                <div class="block_audio">
+                    <audio controls="controls">
+                        <source src="audio/salt_lake.mp3">
+                    </audio>
+                    <p class="titre">
+                        Salt lake - <a href="#none">Sonoa</a>
+                    </p>
+                </div>
+                
+                <div class="block_audio">
+                    <audio controls="controls">
+                        <source src="audio/waterphony.mp3">
+                    </audio>
+                    <p class="titre">
+                        Waterphony - <a href="#none">Sonoa</a>
+                    </p>
+                </div>
+                
+                <div class="block_audio">
+                    <audio controls="controls">
+                        <source src="audio/double_you.mp3">
+                    </audio>
+                    <p class="titre">
+                        Double you - <a href="#none">Sonoa</a>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SWIPER -->
+    <section id="galerie">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide" id="swiper1"></div>
+            <div class="swiper-slide" id="swiper2"></div>
+            <div class="swiper-slide" id="swiper3"></div>
+            <div class="swiper-slide" id="swiper4"></div>
+            <div class="swiper-slide" id="swiper5"></div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- MATERIEL -->
+    <section id="matos" >
+        <h2>
+            Matériel et plugs
+        </h2>
+        <div class="bloc_texte" id="block_matos">
+
+            <!-- micros -->
+            <div class="bord_interne">
+                <ul>
+                    <h3>micros</h3>
+
+                    <li>micro 1</li>
+                    <li>micro 2</li>
+                    <li>micro 3</li>
+                    <li>micro 4</li>
+                    <li>micro 5</li>
+                </ul>
+            </div>
+
+            <!-- amplis -->
+            <div class="bord_interne">
+                <ul>
+                    <h3>amplis</h3>
+
+                    <li>ampli 1</li>
+                    <li>ampli 2</li>
+                    <li>ampli 3</li>
+                    <li>ampli 4</li>
+                    <li>ampli 5</li>
+                </ul>
+            </div>
+
+            <!-- hardware -->
+            <div class="bord_interne">
+                <ul>
+                    <h3>hardware</h3>
+
+                    <li>hardware 1</li>
+                    <li>hardware 2</li>
+                    <li>hardware 2</li>
+                    <li>hardware 4</li>
+                    <li>hardware 5</li>
+                </ul>
+            </div>
+
+            <!-- instruments -->
+            <div class="bord_interne">
+                <ul>
+                    <h3>instruments</h3>
+
+                    <li>instrument 1</li>
+                    <li>instrument 2</li>
+                    <li>instrument 2</li>
+                    <li>instrument 4</li>
+                    <li>instrument 5</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARIFS -->
+    <section id="tarifs">
+        <div id="block_tarifs">
+            <div>
+                <h2>
+                    Nos tarifs 
+                </h2>
+
+                <h3>Pour une journée</h3>
+                <p>250 euros TTC</p>
+
+                <h3>Réserver la semaine</h3>
+                <p>1500 euros TTC</p>
+
+                <h3>Une scéance d'enregistrement + mix</h3>
+                <p>500 euros TTC</p>
+                
+                <h3>Mixage uniquement</h3>
+                <p>200 euros TTC</p>
+            </div>
+
+            <div id="contact">
+                <h2>
+                    Nous contacter 
+                </h2>
+
+                <p id="lien_contact"> <a href="#none">julienmaille@wanadoo.fr </a></p></br>
+            </div>
+        </div>
+    </section>
+
+    
+  
+    <!-- SCRIPT SWIPER -->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+     <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          autoplay: {
+            delay: 5000,
+          },
+          loop: true,
+        });
+      </script>
+      
+  </body>
+</html>
