@@ -1,0 +1,159 @@
+/* font du titre principal - 'Tittilium web' */
+@font-face {
+    font-family: font_navbar;
+    src: url(fonts/Titillium_Web/TitilliumWeb-Light.ttf);
+}
+/* font des liens navbar - 'Nurito sans' */
+@font-face {
+    font-family: font_h1;
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+/* font des textes - 'Nurito sans' */
+@font-face {
+    font-family: font_p;
+    src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+/* font des titres audio - 'Noto-Sans' */
+@font-face {
+    font-family: font_audio;
+    src: url(fonts/Noto_Sans/NotoSans-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    width: 100vw;
+    background: white;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* HEADER ------------------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+header{
+    overflow: hidden;
+    width: 100vw;
+    height: 40vh;
+    background: url(images/console_2.jpg) center/cover no-repeat;
+    background-position: top;
+}
+header h1{
+    width: 100vw;
+    padding: 20px 35px 20px 35px;
+    font-size: 3.2rem;
+    font-family: 'font_h1', sans-serif;
+    font-weight: lighter;
+    color:white;
+    background: linear-gradient(180deg, black, rgba(255, 255, 255, 0));
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* NAVBAR ------------------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+nav{
+    width: 100vw;
+    background: #000;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(180deg, rgb(119, 0, 0), rgb(128, 2, 2));
+}
+nav li{
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+nav ul li a{
+    font-family: 'font_navbar', sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* ACCUEIL ------------------------ */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.bloc_texte{
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
+}
+#accueil{
+    margin-top: 20px;
+}
+#accueil h2{
+    margin-bottom: 7px;
+    text-align: center;
+    font-family: 'font_h1', sans-serif;
+    font-size: 1.6rem;
+}
+#accueil h3{
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'font_h1', sans-serif;
+    font-size: 1.6rem;
+}
+#accueil p{
+    text-align: justify;
+    font-family: 'font_p', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    color: black;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* LISTES ------------------------- */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.listes ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px 20px 25px;
+    background: white;;
+}
+#hardware{
+    display: grid;
+    grid-template-columns: repeat(33%);
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+        "a a a "
+        "b c d"
+}
+#hardware h2{
+    grid-area: a;
+    margin: 40px 0px; 
+    text-align: center;
+    font-family: 'font_h1', sans-serif;
+    font-size: 1.5rem;
+}
+#hardware h3{
+    font-family: 'font_h1', sans-serif;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    font-weight: lighter;
+    background-color: rgb(161, 39, 39);
+    color: white;
+    border-radius: 20px 0px;
+}
+#hardware li{
+    padding-bottom: 3px;
+    font-family: 'font_p', sans-serif;
+    font-weight: bold;
+}
+#hardware #comp ul{
+    grid-area: b;
+}
+#hardware #eq ul{
+    grid-area: c;
+}
+#hardware #dist ul{
+    grid-area: d;
+}
