@@ -1,3 +1,3 @@
 # LAtelier
 
-It's the website about a recording studio bases in France.
+It's a website about a recording studio based in France.
